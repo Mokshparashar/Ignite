@@ -12,7 +12,7 @@ function LandingPage() {
       </nav>
 
       <section className="mt-40 ml-6 h-1/2 flex flex-col gap-8 mb-48">
-        <h1 className="text-7xl w-3/4">Human stories & ideas</h1>
+        <h1 className="text-7xl w-4/5">Human stories & ideas</h1>
 
         <p className="text-xl ">
           A place to read, write and deepen your understanding.

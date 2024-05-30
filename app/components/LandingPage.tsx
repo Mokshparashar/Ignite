@@ -3,7 +3,7 @@ import Image from "next/image";
 import img from "../../public/ignite_logo.png";
 import Footer from "./Footer";
 import { Fragment } from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 function LandingPage() {
   const router = useRouter();

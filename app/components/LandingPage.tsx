@@ -1,9 +1,10 @@
 import Image from "next/image";
 import img from "../../public/ignite_logo.png";
 import Footer from "./Footer";
+import { Fragment } from "react";
 function LandingPage() {
   return (
-    <>
+    <div className="flex items-center justify-between flex-col h-screen">
       <nav className="w-full h-20 flex items-center justify-between px-6 border-b border-red-500">
         <Image src={img} alt="ignite" width={100} height={100} />
         <button className="w-28 h-10 bg-red-500 text-white rounded-3xl">
@@ -11,8 +12,10 @@ function LandingPage() {
         </button>
       </nav>
 
-      <section className="mt-40 ml-6 h-1/2 flex flex-col gap-8 mb-48">
-        <h1 className="text-7xl w-4/5">Human stories & ideas</h1>
+      <section className=" ml-6  flex flex-col gap-10">
+        <h1 className="text-7xl w-full">
+          Human stories <div>& ideas</div>
+        </h1>
 
         <p className="text-xl ">
           A place to read, write and deepen your understanding.
@@ -22,7 +25,7 @@ function LandingPage() {
         </button>
       </section>
       <Footer />
-    </>
+    </div>
   );
 }
 

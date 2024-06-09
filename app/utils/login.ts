@@ -1,5 +1,5 @@
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-import { app } from "../layout";
+import { app } from "./firebaseConfig.ts";
 
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
@@ -14,7 +14,7 @@ export function loginPopup() {
       // The signed-in user info.
       console.log("name");
       const user = result.user;
-      console.log(user)
+      console.log(user);
       // IdP data available using getAdditionalUserInfo(result)
       // ...
     })
